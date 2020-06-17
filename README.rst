@@ -35,6 +35,7 @@ Example scripts:
 **The following script will create a PNG for each equation in the specified JSON file**
 
 .. code:: bash
+
     cd scripts
     python png_generator.py sag/equations.json sag/output --header-file sag/header.tex --dpi 3000
 
