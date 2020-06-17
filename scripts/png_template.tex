@@ -1,0 +1,20 @@
+\documentclass[preview]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\BLOCK{ if header_file is not none }
+\input{\VAR{header_file}}
+\BLOCK{ endif }
+\BLOCK{ if header is not none }
+\VAR{header}
+\BLOCK{ endif }
+
+\begin{document}
+
+\begin{align*}
+\VAR{equation}
+\end{align*}
+
+\end{document}

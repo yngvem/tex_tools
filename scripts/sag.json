@@ -1,0 +1,18 @@
+{
+	"problem.png": "\\minimize_x f(x) = \\sum_i f_i(x)",
+	"stochastic_gradient1.png": "x_{n+1} = x_n - \\eta_n g(x_n)",
+	"stochastic_gradient2.png": "\\mathbb{E}[g(x_n)] = \\nabla f(x_n)",
+	"stochastic_gradient3.png": "\\sum_n \\eta_n \\to \\infty",
+	"stochastic_gradient4.png": "\\sum_n \\eta_n^2 \\in \\infty",
+	"stochastic_gradient5.png": "g(x_n) = \\sum_{i \\in \\mathcal{B}} \\nabla f_i(x_n)",
+	"gradient.png": "\\nabla f(x) = \\sum_i \\nabla f_i(x)",
+	"L_smooth.png": "\\left|\\left| \\nabla f(x) - \\nabla f(y)\\right|\\right|_2 \\leq L \\left|\\left| x - y \\right|\\right|_2",
+	"strong_convexity.png": "f(x) - \\sigma \\left|\\left| x \\right| \\right|^2",
+	"l2_strong_convexity.png": "f(x) + \\lambda \\left|\\left|x\\right|\\right|^2 - \\sigma \\left|\\left| x \\right| \\right|^2",
+	"line_search1.png": "f_i \\left(x_n - \\frac{1}{L_n} \\nabla f_i(x_n)\\right) \\leq f_i(x_n) - \\frac{1}{2L_n} \\left| \\left| \\nabla f_i (x_n) \\right| \\right|^2",
+	"line_search2.png": "L_n \\gets \\gamma L_n",
+	"line_search3.png": "\\gamma \\in (0, 1)",
+	"inner_product_problem.png": "\\minimize_x f(a^T x)",
+	"min.png": "\\minimize_x f(x)",
+	"step_length.png": "\\alpha = \\frac{1}{16L}"
+}
