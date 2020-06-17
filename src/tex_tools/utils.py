@@ -6,7 +6,6 @@ from tempfile import TemporaryDirectory
 import jinja2
 from wand.image import Image
 
-
 __all__ = ["get_template", "generate_pdf", "generate_png"]
 
 

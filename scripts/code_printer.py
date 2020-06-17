@@ -6,9 +6,8 @@ from tempfile import TemporaryDirectory
 
 import jinja2
 
-from tex_tools.utils import generate_pdf, get_template
 from tex_tools.code_printer import render_code_to_tex
-
+from tex_tools.utils import generate_pdf, get_template
 
 LANGUAGE_INFO = {
     "fortran": {
