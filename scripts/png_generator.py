@@ -33,7 +33,7 @@ def main(equation, out_file, dpi, header, header_file):
                 header=header,
                 header_file=header_file,
             )
-            generate_png(tex, out_file/filename, dpi=dpi)
+            generate_png(tex, out_file / filename, dpi=dpi)
     else:
         out_file.parent.mkdir(parents=True, exist_ok=True)
         tex = render_tex(
