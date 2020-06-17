@@ -37,3 +37,4 @@ Example scripts:
 .. code:: bash
     cd scripts
     python png_generator.py sag/equations.json sag/output --header-file sag/header.tex --dpi 3000
+
