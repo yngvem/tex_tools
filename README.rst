@@ -30,7 +30,7 @@ Example scripts:
 .. code:: bash
 
     cd scripts
-    python png_generator.py \frac{1}{2} half.png --dpi 3000
+    python png_generator.py \\frac{1}{2} half.png --dpi 3000
     
 **The following script will create a PNG for each equation in the specified JSON file**
 
