@@ -1,11 +1,6 @@
-import argparse
-import shutil
-import subprocess
 from pathlib import Path
-from tempfile import TemporaryDirectory
 
 from .utils import generate_pdf, get_template
-
 
 DEFAULT_TEMPLATE_PATH = Path(__file__).parent
 DEFAULT_TEMPLATE_NAME = "code_template.tex"
