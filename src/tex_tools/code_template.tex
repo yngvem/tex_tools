@@ -35,7 +35,7 @@
 }
 \makeatother
 
-\lstdefinestyle{fortran}{language=fortran,
+\lstdefinestyle{\VAR{language}}{language=\VAR{ language },
     backgroundcolor=\color{lightergrey},   % choose the background color
     basicstyle=\color{coolgrey}\ttfamily,        % size of fonts used for the code
     breaklines=true,                 % automatic line breaking only at whitespace
@@ -64,13 +64,37 @@
     {8}{{{\ProcessDigit{8}}}}1
     {9}{{{\ProcessDigit{9}}}}1
     {<=}{{\(\leq\)}}1,
+    literate=
+    {æ}{{\ae}}1 
+    {Æ}{{\AE}}1 
+    {ø}{{\o}}1 
+    {Ø}{{\O}}1 
+    {å}{{\aa}}1 
+    {Å}{{\AA}}1 
+    {²}{{$^{\tt 2}$}}1 
+    {³}{{$^{\tt 3}$}}1
+    {0}{{{\ProcessDigit{0}}}}1
+    {1}{{{\ProcessDigit{1}}}}1
+    {2}{{{\ProcessDigit{2}}}}1
+    {3}{{{\ProcessDigit{3}}}}1
+    {4}{{{\ProcessDigit{4}}}}1
+    {5}{{{\ProcessDigit{5}}}}1
+    {6}{{{\ProcessDigit{6}}}}1
+    {7}{{{\ProcessDigit{7}}}}1
+    {8}{{{\ProcessDigit{8}}}}1
+    {9}{{{\ProcessDigit{9}}}}1
+    {<=}{{\(\leq\)}}1,
+    morestring=[b]',
+    morestring=[b]',
+    morecomment=[l]//,
+    otherkeywords={self, {*}, {=}, {+}, {-}},
     showspaces=false,
     showstringspaces=false,
 }
 
-\lstnewenvironment{fortran}
+\lstnewenvironment{\VAR{language}code}
 {
-\lstset{style=fortran}
+\lstset{style=\VAR{language}}
 }
 {
 }
@@ -80,9 +104,9 @@
 \BLOCK{ for name, script in content.items() }
 
 \section{\VAR{name}}
-\begin{fortran}
+\begin{\VAR{ language }code}
 \VAR{script}
-\end{fortran}
+\end{\VAR{ language }code}
 \clearpage
 
 \BLOCK{ endfor }
