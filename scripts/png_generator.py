@@ -1,5 +1,5 @@
 import argparse
-import json
+import yaml
 import shutil
 import subprocess
 from pathlib import Path
@@ -23,7 +23,7 @@ def main(equation, out_file, dpi, header, header_file):
     if Path(equation).is_file():
         out_file.mkdir(parents=True, exist_ok=True)
         with Path(equation).open("r") as f:
-            equations = json.load(f)
+            equations = yaml.load(f)
 
         for filename, equation in equations.items():
             tex = render_tex(
